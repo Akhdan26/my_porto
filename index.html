@@ -50,8 +50,9 @@
     <section class="max-w-6xl mx-auto px-6 py-16 text-center">
         <div class="flex flex-col items-center" data-aos="fade-up">
             <!-- Canvas Foto -->
-            <canvas id="profileCanvas" width="200" height="200"
-                class="rounded-full shadow-glow mb-6 border-4 border-primary"></canvas>
+            <canvas id="profileCanvas" width="400" height="400"
+                class="rounded-full shadow-glow mb-6 border-4 border-primary"
+                style="width:200px;height:200px;"></canvas>
             <h2 class="text-3xl font-bold mb-4">Hi, I'm <span
                     class="text-primary dark:text-primary drop-shadow-[0_0_8px_#00eaff]">Muhammad
                     Hifzhan Silmi,</span> <br>But you can call me <span
@@ -254,10 +255,16 @@
             img.onload = () => {
                 ctx.save();
                 ctx.beginPath();
-                ctx.arc(100, 100, 100, 0, Math.PI * 2, true);
+                ctx.arc(200, 200, 200, 0, Math.PI * 2, true);
                 ctx.closePath();
                 ctx.clip();
-                ctx.drawImage(img, 0, 0, 200, 200);
+                // Crop center dan scaling proporsional ke 400x400 agar tetap tajam
+                let sw = img.width;
+                let sh = img.height;
+                let size = Math.min(sw, sh);
+                let sx = (sw - size) / 2;
+                let sy = (sh - size) / 2;
+                ctx.drawImage(img, sx, sy, size, size, 0, 0, 400, 400);
                 ctx.restore();
             };
         });
