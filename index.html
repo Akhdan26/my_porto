@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Muhammad Hifzhan Silmi</title>
+
+    <!-- Tailwind -->
+    <script>
+        tailwind = {
+            config: {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#00eaff',
+                        },
+                        boxShadow: {
+                            glow: '0 0 16px 4px #00eaff',
+                        },
+                        backgroundImage: {
+                            'glass': 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 100%)',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-gray-100 font-sans min-h-screen transition-colors duration-300">
+    <!-- Navbar -->
+    <header class="bg-gray-800/30 shadow-lg sticky top-0 z-50 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-primary drop-shadow-[0_0_8px_#00eaff]">Akhdan.dev</h1>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#about" class="hover:drop-shadow-[0_0_8px_#00eaff] transition">About</a>
+                <a href="#experience" class="hover:drop-shadow-[0_0_8px_#00eaff] transition">Experience</a>
+                <a href="#projects" class="hover:drop-shadow-[0_0_8px_#00eaff] transition">Projects</a>
+                <a href="#contact" class="hover:drop-shadow-[0_0_8px_#00eaff] transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-16 text-center">
+        <div class="flex flex-col items-center" data-aos="fade-up">
+            <!-- Canvas Foto -->
+            <canvas id="profileCanvas" width="200" height="200"
+                class="rounded-full shadow-glow mb-6 border-4 border-primary"></canvas>
+            <h2 class="text-3xl font-bold mb-4">Hi, I'm <span
+                    class="text-primary dark:text-primary drop-shadow-[0_0_8px_#00eaff]">Muhammad
+                    Hifzhan Silmi !</span> <br>But you can call me <span
+                    class="text-primary dark:text-primary drop-shadow-[0_0_8px_#00eaff]">Akhdan!</span></h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300">Full-stack Web Developer | PHP & Laravel Specialist |
+                TALL Stack Enthusiast</p>
+            <div class="mt-6 space-x-4">
+                <a href="https://github.com/akhdan26" target="_blank"
+                    class="px-4 py-2 bg-primary text-white rounded-lg shadow-glow hover:drop-shadow-[0_0_8px_#00eaff] transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/akhdanhifzhan/" target="_blank"
+                    class="px-4 py-2 rounded-lg shadow-glow hover:drop-shadow-[0_0_8px_#00eaff] transition">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-12" data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-primary mb-4 drop-shadow-[0_0_8px_#00eaff]">About Me</h3>
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Full-stack web developer with 4+ years of experience specializing in building scalable and maintainable
+            applications using PHP and Laravel.
+            Passionate about clean, efficient code and recently expanding into TALL stack for more dynamic applications.
+            Always striving for growth and impactful solutions.
+        </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold text-primary mb-8 drop-shadow-[0_0_8px_#00eaff]">Work Experience
+        </h3>
+        <div class="space-y-8">
+            <!-- Agrinas -->
+            <div data-aos="fade-up">
+                <h4 class="font-semibold">PT Agrinas Jaladri Nusantara (Persero) | IT Application Developer</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Apr 2024 - Present</p>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <li>Developed e-Recruitment platform with TALL stack (reduced manual hiring by 70%).</li>
+                    <li>Built & deployed CSIRT platform for cybersecurity improvement.</li>
+                    <li>Handled IT operations & server maintenance daily.</li>
+                </ul>
+            </div>
+            <!-- PUPR -->
+            <div data-aos="fade-up" data-aos-delay="150">
+                <h4 class="font-semibold">Pusdatin Kementerian PUPR | Fullstack Web Developer</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Mar 2024 – Dec 2024, Jun 2025 – Present</p>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <li>Developed modular CSIRT platform for KTI team.</li>
+                    <li>Enhanced security architecture & improved incident response tools.</li>
+                </ul>
+            </div>
+            <!-- Mobility Doctor -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h4 class="font-semibold">PT Mobility Doctor Indonesia | Backend Developer</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Mar 2023 - Sep 2023</p>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <li>Developed REST API microservices using Laravel Lumen.</li>
+                    <li>Integrated Redis, RabbitMQ, and ElasticSearch for optimization.</li>
+                    <li>Deployed & monitored cloud servers ensuring high availability.</li>
+                </ul>
+            </div>
+            <!-- ITS -->
+            <div data-aos="fade-up" data-aos-delay="450">
+                <h4 class="font-semibold">Teknik Geomatika - ITS | Fullstack Web Developer</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Apr 2021 - Dec 2022</p>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <li>Built responsive apps for national competitions (Geosentric, Geolympic).</li>
+                    <li>Improved UX/UI, attracted 1000+ participants in 1 month.</li>
+                </ul>
+            </div>
+            <!-- Piramida -->
+            <div data-aos="fade-up" data-aos-delay="600">
+                <h4 class="font-semibold">PT Piramida Teknologi Informasi | Assistant Programmer (intern)</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Sep 2021 - Jun 2022</p>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <li>Developed internal helpdesk system using Symfony.</li>
+                    <li>Managed PLN Smart CMS data across 34 provinces (~1M records).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+        <h3 class="text-2xl font-bold text-primary mb-4 drop-shadow-[0_0_8px_#00eaff]">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- 2025 -->
+            <a href="https://dev.kusumacorp.com/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in">
+                <img src="images/kusuma-logo.png" alt="Kusuma" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">Company Profile Website - PT Kurnia Sukses Makmur (2025)</h4>
+                    <p class="text-sm text-cyan-300">Laravel + Filament</p>
+                </div>
+            </a>
+            <!-- 2024 -->
+            <a href="https://karir.agrinasjaladri.co.id/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/logo-jaladri.png" alt="Agrinas" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">E-Recruitment Website - PT Agrinas Jaladri Nusantara (2024)</h4>
+                    <p class="text-sm text-cyan-300">Laravel + Filament</p>
+                </div>
+            </a>
+            <a href="https://csirt.viramakarya.co.id/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/csirt-vk.png" alt="Virama Karya" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">CSIRT Website - PT Virama Karya (2024)</h4>
+                    <p class="text-sm text-cyan-300">Laravel + Filament</p>
+                </div>
+            </a>
+            <a href="https://csirt.pu.go.id/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/pu-logo.png" alt="PU" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">CSIRT Website - Kementerian PU (2024)</h4>
+                    <p class="text-sm text-cyan-300">Laravel + Filament</p>
+                </div>
+            </a>
+            <a href="https://github.com/Akhdan26/jm_rest_api/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="400">
+                <img src="images/nodejs-logo.png" alt="Node.js" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">Simple REST API (2024)</h4>
+                    <p class="text-sm text-cyan-300">Node.js + Express + Docker</p>
+                </div>
+            </a>
+            <!-- 2023 -->
+            <a href="https://github.com/Akhdan26/laravel9-multiauth/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/favicon.svg" alt="Laravel" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">Simple CMS Post (2023)</h4>
+                    <p class="text-sm text-cyan-300">Laravel 9</p>
+                </div>
+            </a>
+            <!-- 2021 -->
+            <a href="https://geosentric-its.com/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="600">
+                <img src="images/geosentric-logo.png" alt="Geosentric" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">International Competition Website (2021)</h4>
+                    <p class="text-sm text-cyan-300">PHP Native</p>
+                </div>
+            </a>
+            <a href="https://akhdan26.github.io/paspro4/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="700">
+                <img src="images/waskita-logo.svg" alt="Waskita" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">Landing Page - Waskita Paspro 4 (2021)</h4>
+                    <p class="text-sm text-cyan-300">PHP Native</p>
+                </div>
+            </a>
+            <!-- 2020 -->
+            <a href="https://github.com/Akhdan26/AnimalTour/" target="_blank"
+                class="p-6 bg-gray-800/30 backdrop-blur border border-white/10 flex items-center space-x-4 rounded-lg border-2 border-primary"
+                data-aos="zoom-in" data-aos-delay="800">
+                <img src="images/android-logo.png" alt="Android" class="w-12 h-12 object-contain">
+                <div>
+                    <h4 class="font-semibold">Simple Android App (2020)</h4>
+                    <p class="text-sm text-cyan-300">Java</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-12 text-center" data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-primary mb-4 drop-shadow-[0_0_8px_#00eaff]">Contact</h3>
+        <p class="text-gray-700 dark:text-gray-300">📧 <a href="mailto:akhdanhifzhan@gmail.com"
+                class="text-indigo-600 dark:text-indigo-400">akhdanhifzhan@gmail.com</a></p>
+        <p class="text-gray-700 dark:text-gray-300">📱 <a href="https://wa.me/6285331066533"
+                class="text-indigo-600 dark:text-indigo-400">+62 853 3106 6533</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/80 py-6 text-center text-sm text-gray-400 backdrop-blur">
+        © 2025 Muhammad Hifzhan Silmi. Built with <span class="text-primary">❤️</span> Tailwind CSS & AOS.
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+
+            // Canvas foto
+            const canvas = document.getElementById("profileCanvas");
+            const ctx = canvas.getContext("2d");
+            const img = new Image();
+            img.src = "images/profile.jpg";
+            img.onload = () => {
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(100, 100, 100, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.clip();
+                ctx.drawImage(img, 0, 0, 200, 200);
+                ctx.restore();
+            };
+        });
+    </script>
+</body>
+
+</html>
