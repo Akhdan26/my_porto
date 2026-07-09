@@ -22,12 +22,17 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
-        <a href="#" className="text-text-primary font-semibold tracking-tight text-lg">
-          {site.name.split(" ").slice(0, 2).join(" ")}
-          <span className="text-accent">.</span>
+        <a href="#" className="flex flex-col">
+          <span className="text-text-primary font-semibold tracking-tight text-lg">
+            {site.name.split(" ").slice(0, 2).join(" ")}
+            <span className="text-accent">.</span>
+          </span>
+          <span className="text-[10px] font-mono text-text-tertiary tracking-wider uppercase">
+            {site.title}
+          </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -50,6 +55,7 @@ export function Navbar() {
           className="md:hidden p-2 text-text-secondary"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
         >
           <svg
             width="24"

@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
-import { TechStack } from "@/components/sections/TechStack";
-import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
-import { Experience } from "@/components/sections/Experience";
-import { EngineeringPrinciples } from "@/components/sections/EngineeringPrinciples";
+import { EngineeringJourney } from "@/components/sections/EngineeringJourney";
+import { ProfessionalExperience } from "@/components/sections/ProfessionalExperience";
+import { EngineeringCaseStudies } from "@/components/sections/EngineeringCaseStudies";
+import { CoreExpertise } from "@/components/sections/CoreExpertise";
+import { Technologies } from "@/components/sections/Technologies";
 import { Contact } from "@/components/sections/Contact";
 import { StructuredData } from "@/components/StructuredData";
 
@@ -16,11 +16,11 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <TechStack />
-        <FeaturedProjects />
-        <Experience />
-        <EngineeringPrinciples />
+        <EngineeringJourney />
+        <ProfessionalExperience />
+        <EngineeringCaseStudies />
+        <CoreExpertise />
+        <Technologies />
         <Contact />
       </main>
       <Footer />

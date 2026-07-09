@@ -10,8 +10,8 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           label="Contact"
-          title="Let's talk."
-          description="I'm currently open to Backend Engineer, Laravel Engineer, and Software Engineer opportunities at enterprise companies."
+          title="Let us talk."
+          description="Currently open to Software Engineer, Backend Engineer, and similar engineering roles at enterprise organizations."
         />
 
         <motion.div

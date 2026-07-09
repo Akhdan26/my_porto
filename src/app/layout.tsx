@@ -17,32 +17,33 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://akhdanhifzhan.pages.dev"),
   title: {
-    default: "Muhammad Hifzhan Silmi — Backend Engineer",
+    default: "Muhammad Hifzhan Silmi — Software Engineer",
     template: "%s — Muhammad Hifzhan Silmi",
   },
   description:
-    "Backend Engineer specializing in Laravel. I build scalable enterprise backend systems, workflow automation platforms, and high-performance APIs for government institutions and state-owned enterprises.",
+    "Software Engineer building enterprise applications and backend systems. 5 years of experience delivering production systems for government institutions, state-owned enterprises, and private organizations.",
   keywords: [
-    "Backend Engineer",
-    "Laravel Developer",
-    "PHP Engineer",
     "Software Engineer",
+    "Backend Engineer",
     "Muhammad Hifzhan Silmi",
-    "Enterprise Backend",
+    "Enterprise Applications",
     "REST API",
+    "Laravel",
+    "PHP",
+    "MySQL",
     "Redis",
-    "PostgreSQL",
     "Docker",
-    "Queue Systems",
+    "System Architecture",
+    "Workflow Automation",
   ],
   authors: [{ name: "Muhammad Hifzhan Silmi" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Muhammad Hifzhan Silmi",
-    title: "Muhammad Hifzhan Silmi — Backend Engineer",
+    title: "Muhammad Hifzhan Silmi — Software Engineer",
     description:
-      "Backend Engineer specializing in Laravel. I build scalable enterprise backend systems, workflow automation platforms, and high-performance APIs.",
+      "Building enterprise applications and backend systems that transform complex business processes into reliable digital solutions.",
     images: [
       {
         url: "/images/profile.jpg",
@@ -54,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Muhammad Hifzhan Silmi — Backend Engineer",
+    title: "Muhammad Hifzhan Silmi — Software Engineer",
     description:
-      "Backend Engineer specializing in Laravel. Enterprise backend systems, workflow automation, high-performance APIs.",
+      "Building enterprise applications and backend systems. 5 years of experience in production enterprise software.",
   },
   robots: {
     index: true,
